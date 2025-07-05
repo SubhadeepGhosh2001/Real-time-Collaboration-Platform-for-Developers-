@@ -10,6 +10,7 @@ import { SocketEvent } from "@/types/socket"
 import { USER_STATUS, User } from "@/types/user"
 import { useEffect } from "react"
 import { useLocation, useNavigate, useParams } from "react-router-dom"
+import Navbar from "../components/Navbar"
 
 function EditorPage() {
     // Listen user online/offline status
@@ -48,10 +49,13 @@ function EditorPage() {
     }
 
     return (
-        <SplitterComponent>
-            <Sidebar />
-            <WorkSpace/>
-        </SplitterComponent>
+        <>
+            <Navbar />
+            <SplitterComponent>
+                <Sidebar />
+                <WorkSpace />
+            </SplitterComponent>
+        </>
     )
 }
 
