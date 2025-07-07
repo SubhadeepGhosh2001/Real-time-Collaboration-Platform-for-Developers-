@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
+    header('Location: login');
     exit();
 }
 ?>
@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code-Sync - Real-time Collaboration Platform</title>
+    <title>Code Sync - Real-time Collaboration Platform</title>
     <link rel="icon" type="image/png" href="favicon.ico">
     <style>
         * {
@@ -475,7 +475,7 @@ if (!isset($_SESSION['user_id'])) {
     
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Code-Sync</a>
+            <a href="#" class="logo">Code Sync</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
@@ -556,7 +556,7 @@ if (!isset($_SESSION['user_id'])) {
     <footer id="contact" class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Code-Sync</h3>
+                <h3>Code Sync</h3>
                 <p>Empowering developers worldwide with real-time collaboration tools. Build better software together.</p>
                 <div class="social-links">
                     <a href="#" title="GitHub">🐙</a>
@@ -593,7 +593,7 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Code-Sync. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2025 Code Sync. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
     </footer>
 
@@ -636,7 +636,7 @@ if (!isset($_SESSION['user_id'])) {
 
         // CTA button functionality
         function startCollaborating() {
-            if (window.confirm('Welcome to Code-Sync! You are about to start a new collaboration session. Continue to Code Room?')) {
+            if (window.confirm('Welcome to Code Sync! You are about to start a new collaboration session. Continue to Code Room?')) {
                 window.location.href = 'http://localhost:5173';
             }
         }

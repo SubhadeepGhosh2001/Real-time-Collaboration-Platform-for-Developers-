@@ -12,7 +12,7 @@ require 'db.php'; // Ensure this file establishes $conn with mysqli_connect
 
 // Redirect if already logged in
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-    header("Location: index.php");
+    header("Location: index");
     ob_end_flush(); // Flush output buffer and end
     exit();
 }
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             $_SESSION['name'] = $user['name'];
                             $_SESSION['email'] = $user['email'];
                             // Redirect after setting session
-                            header("Location: index.php");
+                            header("Location: index");
                             ob_end_flush(); // Flush output buffer and end
                             exit();
                         } else {

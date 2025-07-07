@@ -17,7 +17,7 @@ const Navbar = () => (
     }}
   >
     <Link
-      to="http://localhost/code-sync/index.php"
+      to="http://localhost/code-sync/index"
       style={{
         color: "#cbd5e1",
         marginRight: "1.5rem",
@@ -29,7 +29,7 @@ const Navbar = () => (
       Home
     </Link>
     <a
-      href="http://localhost/code-sync/logout.php"
+      href="http://localhost/code-sync/logout"
       style={{
         color: "#ff6b6b",
         textDecoration: "none",
